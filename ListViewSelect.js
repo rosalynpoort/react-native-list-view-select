@@ -77,7 +77,7 @@ export default class ListViewSelect extends Component {
 
   renderList() {
     let maxHeight = { height: this.props.listHeight };
-    if (this.props.list.length > 12 && !this.props.height) {
+    if (this.props.limitHeight == true && this.props.list.length > 12 && !this.props.height) {
       maxHeight = { height: SCREEN_HEIGHT * 3 / 4 };
     }
 
